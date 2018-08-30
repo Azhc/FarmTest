@@ -5,6 +5,11 @@
   "target": {
     "current": "web"
   },
+    "publish": {
+    "web": 0,
+    "native": 1,
+    "path": "bin-release"
+  },
   "eui": {
     "exmlRoot": [
       "resource/eui_skins"
@@ -33,11 +38,6 @@
     {
       "name": "promise"
     }
-  ],
-  "targets": {
-    "android": {
-      "appname": "AZHC",
-      "packagename": "com.companyname"
-    }
+  ]
   }
-}
+
