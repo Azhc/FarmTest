@@ -1,0 +1,31 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/game/game.js",
+		"libs/modules/promise/promise.js"
+	],
+	"game": [
+		"bin-debug/commonTs/ThemeAdapter.js",
+		"bin-debug/Crops.js",
+		"bin-debug/Home.js",
+		"bin-debug/Login.js",
+		"bin-debug/Main.js",
+		"bin-debug/Platform.js",
+		"bin-debug/Register.js",
+		"bin-debug/commonTs/AssetAdapter.js",
+		"bin-debug/commonTs/LoadingUI.js",
+		"bin-debug/ForgetPwd.js",
+		"bin-debug/itemSkinTs/DuiHuan.js",
+		"bin-debug/itemSkinTs/GoodInfo.js",
+		"bin-debug/itemSkinTs/GoodsItem.js",
+		"bin-debug/itemSkinTs/HouseImgItem.js",
+		"bin-debug/itemSkinTs/LandUp.js",
+		"bin-debug/itemSkinTs/RankItem.js",
+		"bin-debug/itemSkinTs/ShopItem.js",
+		"bin-debug/itemSkinTs/StatusItem.js"
+	]
+}
