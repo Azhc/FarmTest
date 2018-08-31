@@ -32,3 +32,4 @@ var GoodInfo = (function (_super) {
     return GoodInfo;
 }(eui.ItemRenderer));
 __reflect(GoodInfo.prototype, "GoodInfo");
+//# sourceMappingURL=GoodInfo.js.map

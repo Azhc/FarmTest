@@ -40,3 +40,4 @@ var Register = (function (_super) {
     return Register;
 }(eui.Component));
 __reflect(Register.prototype, "Register");
+//# sourceMappingURL=Register.js.map

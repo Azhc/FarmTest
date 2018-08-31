@@ -26,3 +26,4 @@ var ShopItem = (function (_super) {
     return ShopItem;
 }(eui.ItemRenderer));
 __reflect(ShopItem.prototype, "ShopItem");
+//# sourceMappingURL=ShopItem.js.map

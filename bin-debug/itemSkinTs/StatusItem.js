@@ -41,3 +41,4 @@ var StatusItem = (function (_super) {
     return StatusItem;
 }(eui.ItemRenderer));
 __reflect(StatusItem.prototype, "StatusItem");
+//# sourceMappingURL=StatusItem.js.map

@@ -32,8 +32,9 @@ var Login = (function (_super) {
         this.register_btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.toRegister, this);
         this.login_btn.touchEnabled = true;
         this.login_btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.toLogin, this);
-        this.forget_btn.touchEnabled = true;
-        this.forget_btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.forgetPwd, this);
+        //使用验证码登录 暂不需要忘记密码功能
+        // this.forget_btn.touchEnabled = true;
+        // this.forget_btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.forgetPwd, this);
     };
     Login.prototype.toRegister = function () {
         this.parent.addChild(Register.getInstance());
@@ -43,12 +44,9 @@ var Login = (function (_super) {
         this.parent.addChild(Home.getInstance());
         this.parent.removeChild(this);
     };
-    Login.prototype.forgetPwd = function () {
-        this.parent.addChild(ForgetPwd.getInstance());
-        this.parent.removeChild(this);
-    };
     //    单例模式
     Login.instance = null;
     return Login;
 }(eui.Component));
 __reflect(Login.prototype, "Login");
+//# sourceMappingURL=Login.js.map

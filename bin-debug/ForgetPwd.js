@@ -40,3 +40,4 @@ var ForgetPwd = (function (_super) {
     return ForgetPwd;
 }(eui.Component));
 __reflect(ForgetPwd.prototype, "ForgetPwd");
+//# sourceMappingURL=ForgetPwd.js.map

@@ -34,6 +34,8 @@ class LoadingUI extends egret.Sprite {
         this.createView();
     }
 
+
+
     private textField: egret.TextField;
     //Bitmap 九宫格 对图片实行拉伸用
     private load_bg: egret.Bitmap;       //定义背景图变量
@@ -43,13 +45,14 @@ class LoadingUI extends egret.Sprite {
 
 
     private createView(): void {
+
         //背景图
         this.load_bg = new egret.Bitmap();
         this.load_bg.texture = RES.getRes("load4_png"); //加载图片资源
         //获取舞台的宽度 此获取方式被废弃 添加game第三方兼容库后可调用
         this.load_bg.width = egret.MainContext.instance.stage.stageWidth;
         //获取舞台的高度 此获取方式被废弃 添加game第三方兼容库后可调用 
-        this.load_bg.height = egret.MainContext.instance.stage.$stageHeight; 
+        this.load_bg.height = egret.MainContext.instance.stage.$stageHeight;
         this.load_bg.x = 0;                       //相对于舞台 锚点的横坐标
         this.load_bg.y = 0;                       //相对于舞台 锚点的纵坐标
         this.addChild(this.load_bg);              //为舞台添加子项目

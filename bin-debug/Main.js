@@ -51,6 +51,15 @@ var Main = (function (_super) {
         //注入自定义的素材解析器
         //let 是es6中的命令 和var类似 不过let声明的变量 只能在let所在的代码块中可用
         var assetAdapter = new AssetAdapter();
+        // //获取隐藏控件值获取宽度
+        // var StageWidth:any;  
+        // StageWidth=(document.getElementsByName("hdWidth")[0] as HTMLInputElement).value;
+        // // this.stage.width=StageWidth;
+        // this.stage.$stageWidth=StageWidth;
+        this.stage.$stageWidth = 640;
+        this.stage.$stageHeight = 1136;
+        console.log(egret.MainContext.instance.stage.stageWidth);
+        console.log(egret.MainContext.instance.stage.stageHeight);
         //调用两个接口 
         //IAssetAdapter 解析皮肤 
         egret.registerImplementation("eui.IAssetAdapter", assetAdapter);
@@ -147,9 +156,11 @@ var Main = (function (_super) {
      * 创建场景界面
      */
     Main.prototype.startCreateScene = function () {
+        //移除资源加载视图
         this.stage.removeChild(this.loadingView);
         this.parent.addChild(Login.getInstance());
     };
     return Main;
 }(eui.UILayer));
 __reflect(Main.prototype, "Main");
+//# sourceMappingURL=Main.js.map
